@@ -1,0 +1,22 @@
+远程仓库管理：
+1.添加远程库：
+	s1：在web create the New Repository
+	s2: git remote add origi git@github.com:michaelliao/learngit.git
+	将本地的内容与服务器端关联
+	s3:推送上去：首次使用git push -u origin master
+	在以后的推送中可以不加参数,-u将本地master和远端的master关联起来
+	s4:
+	Origin:
+	要关联一个远程库，使用命令git remote add origin git@server-name:path/repo-name.git；
+
+	关联后，使用命令git push -u origin master第一次推送master分支的所有内容；
+
+	此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
+
+	分布式版本系统的最大好处之一是在本地工作完全不需要考虑远程库的存在，也就是有没有联网都可以正常工作，而SVN在没有联网的时候是拒绝干活的！当有网络的时候，再把本地提交推送一下就完成了同步，真是太方便了！
+	
+2.从远程库clone:
+	git clone git@github.com:sailonecn/data_structure.git
+	要克隆一个仓库，首先必须知道仓库的地址，然后使用git clone命令克隆。
+
+	Git支持多种协议，包括https，但通过ssh支持的原生git协议速度最快
